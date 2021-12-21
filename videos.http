@@ -1,0 +1,32 @@
+@api=http://localhost:4000
+
+//Mostrar todos los Videos
+GET {{api}}/videos
+
+### Buscas Video por ID
+GET {{api}}/videos/61b7ffe986a36032e83f36a3
+
+### Crear un Video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "http://www.youtebe10.com",
+    "title": "Video prueba4",
+    "description": "Es un video de prueba4"
+}
+
+### Eliminar un Video por ID
+DELETE  {{api}}/videos/61b7ffe986a36032e83f36a3
+
+
+###Actualizar Video
+PUT {{api}}/videos/61b802acf4d119f276e53e25
+Content-Type: application/json
+
+{
+    "title": "Video Modificado2"
+}
+
+
+
